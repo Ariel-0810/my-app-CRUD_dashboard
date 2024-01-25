@@ -1,6 +1,6 @@
 export default async function fetchItems() {
     try {
-      const response = await fetch('http://localhost:3001/api/items');
+      const response = await fetch('https://my-app-crud-react.vercel.app/api/items');
       if (!response.ok) {
         throw new Error('Could not get items');
       }
